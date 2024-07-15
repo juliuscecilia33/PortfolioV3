@@ -8,7 +8,6 @@ type ExperienceProps = {
   description: string;
   location: string;
   positionName: string;
-  companyName: string;
   dateOfExperience: string;
   backgroundColor: string;
 };
@@ -25,9 +24,11 @@ const Experience = ({
   dateOfExperience,
 }: ExperienceProps) => {
   return (
-    <div className="w-full bg-[#F8F8FA] p-10 flex justify-center rounded-lg">
+    <div
+      className={`w-full bg-[${backgroundColor}] p-10 flex justify-center rounded-lg mb-1`}
+    >
       <div className="flex w-[25%]">
-        <div className="w-28 h-28 aspect-square flex p-4 bg-white rounded items-center justify-center">
+        <div className="w-28 h-28 aspect-square flex p-6 bg-white rounded items-center justify-center">
           <Image
             src={imageSrc}
             alt={imageAlt}
