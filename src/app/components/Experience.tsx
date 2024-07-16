@@ -10,6 +10,7 @@ type ExperienceProps = {
   positionName: string;
   dateOfExperience: string;
   backgroundColor: string;
+  companyName: string;
 };
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +23,7 @@ const Experience = ({
   backgroundColor,
   location,
   dateOfExperience,
+  companyName,
 }: ExperienceProps) => {
   return (
     <div
@@ -39,7 +41,10 @@ const Experience = ({
       <div className="flex flex-col w-[75%]">
         <div className="flex flex-col">
           <p className="text-[#96979A] text-sm mb-2">{dateOfExperience}</p>
-          <h2 className="text-lg text-black font-bold mb-2">{positionName}</h2>
+          <h2 className="text-lg text-black font-bold mb-2">
+            {positionName} @{" "}
+            <span className="text-[#E95278]">{companyName}</span>
+          </h2>
           <p className="text-[#96979A] text-sm mb-2">{location}</p>
           <p className="text-black text-sm mb-2">{description}</p>
         </div>
