@@ -6,7 +6,13 @@ import Adobe from "../assets/AdobeRedLogo.png";
 import IQAir from "../assets/IQAir.png";
 import Chimerocyte from "../assets/Chimerocyte.png";
 import Leaps from "../assets/LeapsLogo.png";
+import Sage from "../assets/SageV2.png";
+import Joblicant from "../assets/Joblicant.png";
 import Image, { StaticImageData } from "next/image";
+import { ImNewTab } from "react-icons/im";
+import { MdOutlineOpenInNew } from "react-icons/md";
+import Link from "next/link";
+import Project from "./components/Project";
 
 export default function Home() {
   return (
@@ -65,81 +71,15 @@ export default function Home() {
       />
       <h2 className="mt-14 mb-3 text-2xl font-bold">Projects</h2>
       <div className="flex flex-wrap w-full justify-between">
-        <div className={`w-[48%] mb-6 bg-[#F8F8FA] flex flex-col p-10 rounded`}>
-          <div className="mb-6 w-20 h-20 aspect-square flex p-6 bg-white rounded-full items-center justify-center">
-            <Image
-              src={Adobe}
-              alt={"Adobe"}
-              className="w-auto h-auto rounded-lg items-center"
-            />
-          </div>
-          <h2 className="text-lg text-black font-bold mb-2">Instadeck</h2>
-          <p className="text-[#96979A] text-sm mb-2">
-            I created a React.js website integrated with AWS (Amplify, Cognito,
-            Route 53, EC2, Lambda, S3) for employees across all levels,
-            facilitating a robust laboratory management system.
-          </p>
-        </div>
-        <div className={`w-[48%] mb-6 bg-[#F8F8FA] flex flex-col p-10 rounded`}>
-          <div className="mb-6 w-20 h-20 aspect-square flex p-6 bg-white rounded-full items-center justify-center">
-            <Image
-              src={Adobe}
-              alt={"Adobe"}
-              className="w-auto h-auto rounded-lg items-center"
-            />
-          </div>
-          <h2 className="text-lg text-black font-bold mb-2">Instadeck</h2>
-          <p className="text-[#96979A] text-sm mb-2">
-            I created a React.js website integrated with AWS (Amplify, Cognito,
-            Route 53, EC2, Lambda, S3) for employees across all levels,
-            facilitating a robust laboratory management system.
-          </p>
-        </div>
-        <div className={`w-[48%] mb-6 bg-[#F8F8FA] flex flex-col p-10 rounded`}>
-          <div className="mb-6 w-20 h-20 aspect-square flex p-6 bg-white rounded-full items-center justify-center">
-            <Image
-              src={Adobe}
-              alt={"Adobe"}
-              className="w-auto h-auto rounded-lg items-center"
-            />
-          </div>
-          <h2 className="text-lg text-black font-bold mb-2">Instadeck</h2>
-          <p className="text-[#96979A] text-sm mb-2">
-            I created a React.js website integrated with AWS (Amplify, Cognito,
-            Route 53, EC2, Lambda, S3) for employees across all levels,
-            facilitating a robust laboratory management system.
-          </p>
-        </div>
-        <div className={`w-[48%] mb-6 bg-[#F8F8FA] flex flex-col p-10 rounded`}>
-          <div className="mb-6 w-20 h-20 aspect-square flex p-6 bg-white rounded-full items-center justify-center">
-            <Image
-              src={Adobe}
-              alt={"Adobe"}
-              className="w-auto h-auto rounded-lg items-center"
-            />
-          </div>
-          <h2 className="text-lg text-black font-bold mb-2">Instadeck</h2>
-          <p className="text-[#96979A] text-sm mb-2">
-            I created a React.js website integrated with AWS (Amplify, Cognito,
-            Route 53, EC2, Lambda, S3) for employees across all levels,
-            facilitating a robust laboratory management system.
-          </p>
-        </div>
-        <div className={`w-[48%] mb-6 bg-[#F8F8FA] flex flex-col p-10 rounded`}>
-          <div className="mb-6 w-20 h-20 aspect-square flex p-6 bg-white rounded-full items-center justify-center">
-            <Image
-              src={Adobe}
-              alt={"Adobe"}
-              className="w-auto h-auto rounded-lg items-center"
-            />
-          </div>
-          <h2 className="text-lg text-black font-bold mb-2">Instadeck</h2>
-          <p className="text-[#96979A] text-sm mb-2">
-            I created a React.js website integrated with AWS (Amplify, Cognito,
-            Route 53, EC2, Lambda, S3) for employees across all levels,
-            facilitating a robust laboratory management system.
-          </p>
-        </div>
+        <Project
+          imageSrc={Sage}
+          imageAlt="Sage"
+          projectName="Sage"
+          projectDescription="A note-taking app that allows users to read the Bible, take notes,
+            refer to passages, create themes, find community notes, and
+            collaborate in community workspaces."
+          projectLink="https://github.com/juliuscecilia33/Sage"
+        />
       </div>
     </div>
   );
