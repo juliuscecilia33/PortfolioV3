@@ -16,23 +16,30 @@ export default function Home() {
     {
       img: Adobe,
       quote:
-        "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to select between formats.",
-      name: "Jessie J",
-      role: "Acme LTD",
+        "He was a culture fit for our team at Adobe, but I also believe he would fit in anywhere where hard work and collaboration are valued.",
+      name: "Kellen C. - ",
+      role: "My Mentor at Adobe",
     },
     {
       img: IQAir,
       quote:
-        "Having the power to capture user feedback is revolutionary. Even if a participant abandons the sign-up process midway, their valuable input remains intact.",
-      name: "Nick V",
-      role: "Malika Inc.",
+        "Julius is extremely talented and a quick study. To the point that despite him not finishing his education, I was ready to offer him a full-time position.",
+      name: "Rohan J.",
+      role: "My Manager at IQAir",
     },
     {
       img: Leaps,
       quote:
-        "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
-      name: "Amelia W",
-      role: "Panda AI",
+        "He is well ahead of his peers, in my opinion, and I look forward to continuing to be a part of his life and career.",
+      name: "Rishad B.",
+      role: "My Mentor",
+    },
+    {
+      img: Leaps,
+      quote:
+        "Julius is passionate about creating brand new ideas about technology",
+      name: "Ian L.",
+      role: "My Teammate",
     },
   ];
 
@@ -76,7 +83,7 @@ export default function Home() {
         blogTitle="Embracing Kobe Bryant’s Work Ethic in Software Engineering"
         blogDescription="Kobe’s relentless dedication to mastering the fundamentals of basketball is a philosophy I look to adopt in my own journey as a software engineer. Just as Kobe perfected his footwork and shooting form, I’m committed to mastering the basics of programming."
       />
-      <h2 className="mt-14 mb-3 text-2xl font-bold">Testimonials</h2>
+      <h2 className="mt-14 mb-3 text-2xl font-bold">Recommendations</h2>
       <FancyTestimonialsSlider testimonials={testimonials} />
     </div>
   );
