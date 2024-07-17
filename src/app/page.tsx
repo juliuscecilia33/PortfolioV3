@@ -10,6 +10,7 @@ import Adobe from "../assets/AdobeRedLogo.png";
 import IQAir from "../assets/IQAir.png";
 import Leaps from "../assets/LeapsLogo.png";
 import FancyTestimonialsSlider from "./components/Testimonials";
+import { useEffect } from "react";
 
 export default function Home() {
   const testimonials = [
@@ -43,16 +44,57 @@ export default function Home() {
     },
   ];
 
+  const sections = [
+    { id: "Experience", title: "Experience" },
+    { id: "Projects", title: "Projects" },
+    { id: "Blogs", title: "Blogs" },
+    { id: "Recommendations", title: "Recommendations" },
+    { id: "Connect", title: "Connect" },
+  ];
+
+  const sendEmail = () => {
+    window.location.href = "mailto:juliuscecilia33@outlook.com";
+  };
+
+  const makeCall = () => {
+    window.location.href = "tel:+5623324687"; // Replace +1234567890 with the actual phone number
+  };
+
   return (
     <div className="w-full px-[25%] flex flex-col py-10">
       <Hero />
-      <h2 className="mt-10 mb-3 text-2xl font-bold">Experience</h2>
+      <div
+        id="nav"
+        className="w-full flex items-center justify-center gap-4 p-4"
+      >
+        {sections.map((section) => (
+          <button
+            key={section.id}
+            onClick={() => {
+              const element = document.getElementById(section.id);
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className=" mb-5 text-[#96979A] px-5 py-2 rounded-md text-sm font-medium"
+          >
+            {section.title}
+          </button>
+        ))}
+      </div>
+      <h2 id="Experience" className="mt-10 mb-3 text-2xl font-bold">
+        Experience
+      </h2>
       <Experiences />
-      <h2 className="mt-14 mb-3 text-2xl font-bold">Projects</h2>
+      <h2 id="Projects" className="mt-14 mb-3 text-2xl font-bold">
+        Projects
+      </h2>
       <div className="flex flex-wrap w-full justify-between">
         <Projects />
       </div>
-      <h2 className="mt-14 mb-3 text-2xl font-bold">Blogs</h2>
+      <h2 id="Blogs" className="mt-14 mb-3 text-2xl font-bold">
+        Blogs
+      </h2>
       <Blog
         blogLink="https://medium.com/@juliuscecilia33/predicting-nba-game-results-using-machine-learning-and-python-6be209d6d165"
         backgroundColor="F8F8FA"
@@ -83,8 +125,27 @@ export default function Home() {
         blogTitle="Embracing Kobe Bryant’s Work Ethic in Software Engineering"
         blogDescription="Kobe’s relentless dedication to mastering the fundamentals of basketball is a philosophy I look to adopt in my own journey as a software engineer. Just as Kobe perfected his footwork and shooting form, I’m committed to mastering the basics of programming."
       />
-      <h2 className="mt-14 mb-3 text-2xl font-bold">Recommendations</h2>
+      <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold">
+        Recommendations
+      </h2>
       <FancyTestimonialsSlider testimonials={testimonials} />
+      <h2 id="Connect" className="mt-14 mb-3 text-2xl font-bold">
+        Let's Connect
+      </h2>
+      <div className="flex flex-col">
+        <button
+          onClick={sendEmail}
+          className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium"
+        >
+          Email me: juliuscecilia33@outlook.com
+        </button>
+        <button
+          onClick={makeCall}
+          className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium"
+        >
+          Call me: 562-332-4687
+        </button>
+      </div>
     </div>
   );
 }
