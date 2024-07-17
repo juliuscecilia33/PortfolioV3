@@ -11,8 +11,6 @@ type ProjectProps = {
   projectLink: string;
 };
 
-const inter = Inter({ subsets: ["latin"] });
-
 const Project = ({
   imageSrc,
   imageAlt,
