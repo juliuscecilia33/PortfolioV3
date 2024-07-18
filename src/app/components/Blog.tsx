@@ -16,15 +16,17 @@ const Blog = ({
 }: BlogProps) => {
   return (
     <div
-      className={`w-full bg-[#${backgroundColor}] p-10 flex-col justify-center rounded-lg mb-1`}
+      className={`w-full bg-[#${backgroundColor}] p-6 md:p-10 flex flex-col justify-center rounded-lg mb-4 md:mb-2`}
     >
-      <div className="flex w-full justify-between">
-        <p className="text-[#96979A] text-sm mb-2">medium.com</p>
+      <div className="flex items-center justify-between mb-4">
+        <p className="text-[#96979A] text-xs md:text-sm">medium.com</p>
         <Link href={blogLink} target="_blank" rel="noopener noreferrer">
-          <MdOutlineOpenInNew className="text-[#96979A]" size={25} />
+          <MdOutlineOpenInNew className="text-[#96979A]" size={20} />
         </Link>
       </div>
-      <h2 className="text-lg text-black font-bold mb-2">{blogTitle}</h2>
+      <h2 className="text-lg md:text-xl text-black font-bold mb-2">
+        {blogTitle}
+      </h2>
       <p className="text-[#96979A] text-sm mb-2">{blogDescription}</p>
     </div>
   );

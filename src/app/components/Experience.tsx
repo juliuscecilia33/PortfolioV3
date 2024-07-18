@@ -27,9 +27,9 @@ const Experience = ({
 }: ExperienceProps) => {
   return (
     <div
-      className={`w-full bg-[${backgroundColor}] p-10 flex justify-center rounded-lg mb-1`}
+      className={`w-full bg-[${backgroundColor}] p-6 md:p-10 flex flex-col md:flex-row justify-center rounded-lg mb-4 md:mb-1`}
     >
-      <div className="flex w-[25%]">
+      <div className="flex justify-center md:w-[25%] mb-4 md:mb-0">
         <div className="w-28 h-28 aspect-square flex p-6 bg-white rounded items-center justify-center">
           <Image
             src={imageSrc}
@@ -38,7 +38,7 @@ const Experience = ({
           />
         </div>
       </div>
-      <div className="flex flex-col w-[75%]">
+      <div className="flex flex-col md:w-[75%]">
         <div className="flex flex-col">
           <p className="text-[#96979A] text-sm mb-2">{dateOfExperience}</p>
           <h2 className="text-lg text-black font-bold mb-2">

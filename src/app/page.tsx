@@ -61,7 +61,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full px-[25%] flex flex-col py-10">
+    <div className="w-full px-5 sm:px-10 md:px-[15%] lg:px-[25%] flex flex-col py-10">
       <Hero />
       <div
         id="nav"

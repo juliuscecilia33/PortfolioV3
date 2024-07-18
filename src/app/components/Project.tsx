@@ -19,21 +19,25 @@ const Project = ({
   projectLink,
 }: ProjectProps) => {
   return (
-    <div className={`w-[48%] mb-6 bg-[#F8F8FA] flex flex-col p-10 rounded-lg`}>
-      <div className="flex justify-between">
-        <div className="mb-6 w-20 h-20 aspect-square flex p-3 bg-white rounded-full items-center justify-center">
+    <div className="w-full sm:w-[48%] lg:w-[30%] mb-6 bg-[#F8F8FA] flex flex-col p-4 sm:p-6 lg:p-8 rounded-lg">
+      <div className="flex justify-between items-center mb-4">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 aspect-square flex p-2 sm:p-3 bg-white rounded-full items-center justify-center">
           <Image
             src={imageSrc}
             alt={imageAlt}
-            className="w-auto h-auto rounded-lg items-center"
+            className="w-auto h-auto rounded-lg"
           />
         </div>
         <Link href={projectLink} target="_blank" rel="noopener noreferrer">
-          <MdOutlineOpenInNew className="text-[#96979A]" size={25} />
+          <MdOutlineOpenInNew className="text-[#96979A]" size={20} />
         </Link>
       </div>
-      <h2 className="text-lg text-black font-bold mb-2">{projectName}</h2>
-      <p className="text-[#96979A] text-sm mb-2">{projectDescription}</p>
+      <h2 className="text-base sm:text-lg text-black font-bold mb-2">
+        {projectName}
+      </h2>
+      <p className="text-xs sm:text-sm text-[#96979A] mb-2">
+        {projectDescription}
+      </p>
     </div>
   );
 };

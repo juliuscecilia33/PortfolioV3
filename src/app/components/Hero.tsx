@@ -8,25 +8,27 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10">
       <Image
         src={MyProfile}
-        alt="My Profile>"
-        width={175}
-        height={175}
-        className="aspect-square rounded-full mb-5"
+        alt="My Profile"
+        width={150}
+        height={150}
+        className="aspect-square rounded-full mb-4 sm:mb-5"
       />
-      <h1 className="text-3xl font-bold mb-3">Julius Cecilia</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3">
+        Julius Cecilia
+      </h1>
       <button
         onClick={sendEmail}
-        className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium"
+        className="bg-[#E95278] text-white px-4 py-2 rounded-md text-xs sm:text-sm font-medium mb-4 sm:mb-5"
       >
         Open to Work
       </button>
-      <p className="text-[#747371] text-sm mb-3">
+      <p className="text-[#747371] text-center text-xs sm:text-sm mb-2 sm:mb-3">
         Software Engineer from Los Angeles, California
       </p>
-      <p className="text-[#747371] text-sm mb-5">
+      <p className="text-[#747371] text-xs sm:text-sm">
         Find me on:{" "}
         <Link
           href="https://github.com/juliuscecilia33"
