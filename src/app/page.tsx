@@ -105,13 +105,13 @@ export default function Home() {
         blogLink="https://medium.com/@juliuscecilia33/building-real-time-typing-indicators-in-java-19e245539794"
         backgroundColor="FFFFFF"
         blogTitle="Building Real-Time Typing Indicators in Java"
-        blogDescription="I’ve always been fascinated by the subtle yet powerful ways technology influences human interaction. One particular feature that caught my attention early on was the real-time typing indicators in messaging apps, showing when a user is typing."
+        blogDescription="I&rsquo;ve always been fascinated by the subtle yet powerful ways technology influences human interaction. One particular feature that caught my attention early on was the real-time typing indicators in messaging apps, showing when a user is typing."
       />
       <Blog
         blogLink="https://medium.com/@juliuscecilia33/how-leetcode-skills-transformed-my-note-taking-app-4ccd88d023b8"
         backgroundColor="F8F8FA"
         blogTitle="How LeetCode Transformed My Note-Taking App"
-        blogDescription="I've been solving LeetCode problems to prepare for software engineering job interviews and like many, I initially thought that the data structures and algorithms emphasized in these problems would rarely be encountered in real-life work and projects. However, my recent experience proved otherwise."
+        blogDescription="I&rsquo;ve been solving LeetCode problems to prepare for software engineering job interviews and like many, I initially thought that the data structures and algorithms emphasized in these problems would rarely be encountered in real-life work and projects. However, my recent experience proved otherwise."
       />
       <Blog
         blogLink="https://medium.com/@juliuscecilia33/picking-the-right-tech-stack-prisma-supabase-and-next-js-1ea3c17032c3"
@@ -130,7 +130,7 @@ export default function Home() {
       </h2>
       <FancyTestimonialsSlider testimonials={testimonials} />
       <h2 id="Connect" className="mt-14 mb-3 text-2xl font-bold">
-        Let's Connect
+        Let&rsquo;s Connect
       </h2>
       <div className="flex flex-col">
         <button

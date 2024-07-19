@@ -61,7 +61,7 @@ const Projects = () => {
         imageSrc={Joblicant}
         imageAlt="Joblicant"
         projectName="Joblicant"
-        projectDescription="A dashboard interface showcasing all your job applications in one place! Users can also save commonly used application information and easily copy/paste that over to whatever they're applying for."
+        projectDescription="A dashboard interface showcasing all your job applications in one place! Users can also save commonly used application information and easily copy/paste that over to whatever they&rsquo;re applying for."
         projectLink="https://github.com/juliuscecilia33/Joblicant"
       />
       <Project

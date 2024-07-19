@@ -10,7 +10,7 @@ const Experiences = () => {
       <Experience
         imageSrc={Leaps}
         imageAlt="Leaps"
-        description="I led a team of five using agile methodologies to develop a social communication app for sports enthusiasts. We utilized Flutter, Node.js, AWS services (S3, RDS, API Gateway, Cognito), and PostgreSQL to create a mobile app that enhanced user engagement in sports activities and team collaboration. Our project received $8k in funding from the AWS Startup Program and was showcased at UW's 2024 Science and Technology Showcase, highlighting our innovation in sports technology."
+        description="I led a team of five using agile methodologies to develop a social communication app for sports enthusiasts. We utilized Flutter, Node.js, AWS services (S3, RDS, API Gateway, Cognito), and PostgreSQL to create a mobile app that enhanced user engagement in sports activities and team collaboration. Our project received $8k in funding from the AWS Startup Program and was showcased at UW&rsquo;s 2024 Science and Technology Showcase, highlighting our innovation in sports technology."
         positionName="Co-Founder and Software Engineer"
         companyName="Leaps"
         location="Seattle, Washington"
@@ -20,7 +20,7 @@ const Experiences = () => {
       <Experience
         imageSrc={Adobe}
         imageAlt="Adobe 2023"
-        description="I developed a dynamic email automation solution for Adobe using Microsoft Outlook's Actionable Messages/Adaptive Cards and Google's AMP for Gmail, optimizing product approval workflows and cutting errors by 30%. I integrated this with Adobe's backend using Python and Node.js for security and reliability. Additionally, I helped in the transition of Adobe's Console for Businesses from Angular.js to React.js, ensuring smooth integration and performance using Jasmine.js and Jest.js for testing."
+        description="I developed a dynamic email automation solution for Adobe using Microsoft Outlook&rsquo;s Actionable Messages/Adaptive Cards and Google&rsquo;s AMP for Gmail, optimizing product approval workflows and cutting errors by 30%. I integrated this with Adobe&rsquo;s backend using Python and Node.js for security and reliability. Additionally, I helped in the transition of Adobe&rsquo;s Console for Businesses from Angular.js to React.js, ensuring smooth integration and performance using Jasmine.js and Jest.js for testing."
         positionName="Software Engineer Intern"
         companyName="Adobe"
         location="Seattle, Washington"
@@ -30,7 +30,7 @@ const Experiences = () => {
       <Experience
         imageSrc={Adobe}
         imageAlt="Adobe 2022"
-        description="I implemented a read-only access mode for Adobe's Console for Businesses using React.js, Angular.js, and Java, addressing customer security concerns and improving support processes by 40%. This involved refining data and authentication logic to establish role-based access control with token-based authentication. I integrated backend APIs to validate user permissions in real-time, ensuring secure and streamlined access for users."
+        description="I implemented a read-only access mode for Adobe&rsquo;s Console for Businesses using React.js, Angular.js, and Java, addressing customer security concerns and improving support processes by 40%. This involved refining data and authentication logic to establish role-based access control with token-based authentication. I integrated backend APIs to validate user permissions in real-time, ensuring secure and streamlined access for users."
         positionName="Software Engineer Intern"
         companyName="Adobe"
         location="Seattle, Washington"
