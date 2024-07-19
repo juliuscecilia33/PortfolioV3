@@ -65,7 +65,7 @@ export default function Home() {
       <Hero />
       <div
         id="nav"
-        className="w-full flex items-center justify-center gap-4 p-4"
+        className="w-full flex flex-col md:flex-row items-center justify-center gap-4 p-4"
       >
         {sections.map((section) => (
           <button
@@ -76,7 +76,7 @@ export default function Home() {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className=" mb-5 text-[#96979A] px-5 py-2 rounded-md text-sm font-medium"
+            className="mb-5 text-[#96979A] px-5 py-2 rounded-md text-sm font-medium"
           >
             {section.title}
           </button>
