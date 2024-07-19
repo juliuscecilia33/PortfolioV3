@@ -122,8 +122,8 @@ export default function Home() {
       <Blog
         blogLink="https://medium.com/@juliuscecilia33/embracing-kobe-bryants-work-ethic-in-software-engineering-db1aaa68453a"
         backgroundColor="F8F8FA"
-        blogTitle="Embracing Kobe Bryant’s Work Ethic in Software Engineering"
-        blogDescription="Kobe’s relentless dedication to mastering the fundamentals of basketball is a philosophy I look to adopt in my own journey as a software engineer. Just as Kobe perfected his footwork and shooting form, I’m committed to mastering the basics of programming."
+        blogTitle="Embracing Kobe Bryant&rsquo;s Work Ethic in Software Engineering"
+        blogDescription="Kobe&rsquo;s relentless dedication to mastering the fundamentals of basketball is a philosophy I look to adopt in my own journey as a software engineer. Just as Kobe perfected his footwork and shooting form, I&rsquo;m committed to mastering the basics of programming."
       />
       <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold">
         Recommendations
