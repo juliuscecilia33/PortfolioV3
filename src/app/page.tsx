@@ -96,6 +96,30 @@ export default function Home() {
         Blogs
       </h2>
       <Blog
+        blogLink="https://medium.com/@juliuscecilia33/go-fiber-radix-trees-9a1befb873f2"
+        backgroundColor="F8F8FA"
+        blogTitle="Go Fiber: Radix Trees"
+        blogDescription="One of the coolest things I’ve learned about Go Fiber is how it uses a Radix Tree for routing."
+      />
+      <Blog
+        blogLink="https://medium.com/@juliuscecilia33/gorm-in-golang-transaction-management-callbacks-and-preloading-41a30a2498ab"
+        backgroundColor="FFFFFF"
+        blogTitle="GORM in Golang: Transaction Management, Callbacks, and Preloading"
+        blogDescription="I needed a reliable ORM to handle the database interactions."
+      />
+      <Blog
+        blogLink="https://medium.com/@juliuscecilia33/understanding-embeddings-with-pinecone-9f765b490387"
+        backgroundColor="F8F8FA"
+        blogTitle="Understanding Embeddings with Pinecone"
+        blogDescription="ecently, I took a deep dive into Pinecone (https://www.pinecone.io/), a vector database designed for high-dimensional data like embeddings."
+      />
+      <Blog
+        blogLink="https://medium.com/@juliuscecilia33/planning-out-the-architecture-of-my-educational-app-for-kids-f0444b021c47"
+        backgroundColor="FFFFFF"
+        blogTitle="Planning Out the Architecture of My Educational App for kids"
+        blogDescription="Here’s the tech: React Native for the mobile apps, Golang for the backend, PostgreSQL for the database, and Docker for containerization."
+      />
+      <Blog
         blogLink="https://medium.com/@juliuscecilia33/predicting-nba-game-results-using-machine-learning-and-python-6be209d6d165"
         backgroundColor="F8F8FA"
         blogTitle="Predicting NBA Game Results Using Machine Learning and Python"
@@ -112,18 +136,6 @@ export default function Home() {
         backgroundColor="F8F8FA"
         blogTitle="How LeetCode Transformed My Note-Taking App"
         blogDescription="I&rsquo;ve been solving LeetCode problems to prepare for software engineering job interviews and like many, I initially thought that the data structures and algorithms emphasized in these problems would rarely be encountered in real-life work and projects. However, my recent experience proved otherwise."
-      />
-      <Blog
-        blogLink="https://medium.com/@juliuscecilia33/picking-the-right-tech-stack-prisma-supabase-and-next-js-1ea3c17032c3"
-        backgroundColor="FFFFFF"
-        blogTitle="Picking the right tech stack: Prisma, Supabase, and Next.js"
-        blogDescription="As a developer, choosing the right tech stack for a project can be both exciting and daunting. After much research and experimentation, I settled on using Prisma, Supabase, and Next.js for my latest project, a note-taking app."
-      />
-      <Blog
-        blogLink="https://medium.com/@juliuscecilia33/embracing-kobe-bryants-work-ethic-in-software-engineering-db1aaa68453a"
-        backgroundColor="F8F8FA"
-        blogTitle="Embracing Kobe Bryant&rsquo;s Work Ethic in Software Engineering"
-        blogDescription="Kobe&rsquo;s relentless dedication to mastering the fundamentals of basketball is a philosophy I look to adopt in my own journey as a software engineer. Just as Kobe perfected his footwork and shooting form, I&rsquo;m committed to mastering the basics of programming."
       />
       <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold">
         Recommendations

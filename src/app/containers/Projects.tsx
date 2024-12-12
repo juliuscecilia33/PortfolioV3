@@ -1,5 +1,5 @@
 import Leaps from "../../assets/LeapsLogo.png";
-import Sage from "../../assets/SageV2.png";
+import SageLogo from "../../assets/SageLogo.png";
 import Joblicant from "../../assets/Joblicant.png";
 import ChatPulse from "../../assets/ChatPulse.png";
 import FAInitiative from "../../assets/FAInitiative.png";
@@ -13,13 +13,18 @@ const Projects = () => {
   return (
     <>
       <Project
-        imageSrc={Sage}
+        imageSrc={SageLogo}
         imageAlt="Sage"
         projectName="Sage"
-        projectDescription="A note-taking app that allows users to read the Bible, take notes,
-            refer to passages, create themes, find community notes, and
-            collaborate in community workspaces."
-        projectLink="https://github.com/juliuscecilia33/Sage"
+        projectDescription="An engaging and interactive app designed to inspire growth for both kids. By combining the timeless wisdom of the Bible with modern gamification elements, Sage offers a unique way to deepen your faith while having fun and connecting with others."
+        projectLink="https://github.com/juliuscecilia33/sagev2-mobile"
+      />
+      <Project
+        imageSrc={SageLogo}
+        imageAlt="Sage"
+        projectName="Sage (Backend)"
+        projectDescription="The backend of SageV2 is built with Golang, Docker, and PostgreSQL, ensuring a scalable foundation for the app's interactive and faith-based features."
+        projectLink="https://github.com/juliuscecilia33/sagev2"
       />
       <Project
         imageSrc={HoopsPredictor}
