@@ -3,10 +3,21 @@ import Adobe from "../../assets/AdobeRedLogo.png";
 import IQAir from "../../assets/IQAir.png";
 import Chimerocyte from "../../assets/Chimerocyte.png";
 import Leaps from "../../assets/LeapsLogo.png";
+import BookedBy from "../../assets/BookedBy.jpg";
 
 const Experiences = () => {
   return (
     <>
+      <Experience
+        imageSrc={BookedBy}
+        imageAlt="BookedBy"
+        description="I led the full lifecycle development of Bookedby's Queue: from prototyping and design to building a fully functional product component. I also enhanced the company's Sales flow and interface, improving usability and visual appeal to boost user engagement. I developed new features in the Appointment Book, including its rebooking functionality, booking additional appointments, and mobile-friendly design for a superior user experience. I built out the Transactions page too by integrating backend data, enabling users to view their transaction history clearly and efficiently."
+        positionName="Software Engineer"
+        companyName="BookedBy"
+        location="Austin, Texas"
+        backgroundColor="#FFFFFF"
+        dateOfExperience="February 2025 - Present"
+      />
       <Experience
         imageSrc={Leaps}
         imageAlt="Leaps"

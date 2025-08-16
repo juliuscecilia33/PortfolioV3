@@ -149,7 +149,7 @@ export default function Home() {
           onClick={sendEmail}
           className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium"
         >
-          Email me: juliuscecilia33@outlook.com
+          Email me: juliusscecilia33@gmail.com
         </button>
         <button
           onClick={makeCall}
