@@ -55,7 +55,7 @@ const Hero = () => {
           Medium
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1yl3ujeOWJF7Cve_LwerkYT4xXZGth7Kb/view?usp=sharing"
+          href="https://drive.google.com/file/d/1PGq2Sr5fPQwwdXAWR-37msx1yHYV-FAi/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
