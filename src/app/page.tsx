@@ -42,6 +42,20 @@ export default function Home() {
       name: "Ian L.",
       role: "My Teammate",
     },
+    {
+      img: Leaps,
+      quote:
+        "Julius is a teammate people enjoy working with — reliable, collaborative, and always raising the bar!!",
+      name: "Yamini N.",
+      role: "My Manager at BookedBy",
+    },
+    {
+      img: Leaps,
+      quote:
+        "Julius doesn’t just settle for “good enough”; he’s always pushing himself and the team forward, making a positive impact wherever he goes. His dedication, creativity, and resilience are qualities that set him apart.",
+      name: "Guilherme B.",
+      role: "My Manager at BookedBy",
+    },
   ];
 
   const sections = [
@@ -92,6 +106,10 @@ export default function Home() {
       <div className="flex flex-wrap w-full justify-between">
         <Projects />
       </div>
+      <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold">
+        Recommendations
+      </h2>
+      <FancyTestimonialsSlider testimonials={testimonials} />
       <h2 id="Blogs" className="mt-14 mb-3 text-2xl font-bold">
         Blogs
       </h2>
@@ -137,10 +155,6 @@ export default function Home() {
         blogTitle="How LeetCode Transformed My Note-Taking App"
         blogDescription="I&rsquo;ve been solving LeetCode problems to prepare for software engineering job interviews and like many, I initially thought that the data structures and algorithms emphasized in these problems would rarely be encountered in real-life work and projects. However, my recent experience proved otherwise."
       />
-      <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold">
-        Recommendations
-      </h2>
-      <FancyTestimonialsSlider testimonials={testimonials} />
       <h2 id="Connect" className="mt-14 mb-3 text-2xl font-bold">
         Let&rsquo;s Connect
       </h2>
