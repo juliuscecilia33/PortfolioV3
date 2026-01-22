@@ -67,11 +67,11 @@ export default function Home() {
   ];
 
   const sendEmail = () => {
-    window.location.href = "mailto:juliuscecilia33@outlook.com";
+    window.location.href = "mailto:juliusscecilia33@gmail.com";
   };
 
   const makeCall = () => {
-    window.location.href = "tel:+5623324687"; // Replace +1234567890 with the actual phone number
+    window.location.href = "tel:+5623324687"; 
   };
 
   return (

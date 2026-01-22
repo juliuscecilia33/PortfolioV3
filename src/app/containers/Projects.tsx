@@ -8,10 +8,25 @@ import HoopsPredictor from "../../assets/HoopsPredictor.png";
 import FAOutlets from "../../assets/FAOutlets.png";
 import CycleScan from "../../assets/CycleScan.png";
 import Project from "../components/Project";
+import DineLogo from "../../assets/DineLogo.png";
 
 const Projects = () => {
   return (
     <>
+      <Project
+        imageSrc={DineLogo}
+        imageAlt="Dine"
+        projectName="Dine"
+        projectDescription="Dine is a cross-platform mobile application designed to make living with food allergies safer and easier. Whether you're managing your own allergies, caring for children with food restrictions, or running a restaurant that accommodates allergen-sensitive diners, Dine provides the tools you need."
+        projectLink="https://github.com/SageDevelopmentCode/dineapp"
+      />
+      <Project
+        imageSrc={DineLogo}
+        imageAlt="Dine"
+        projectName="Dine Web"
+        projectDescription="Dine Web is the public/private profile component of the Dine food allergy management ecosystem. It provides shareable web profiles for users and restaurants to communicate food allergy information, safety protocols, and dietary accommodations."
+        projectLink="https://github.com/SageDevelopmentCode/dine-web"
+      />
       <Project
         imageSrc={SageLogo}
         imageAlt="Sage"
