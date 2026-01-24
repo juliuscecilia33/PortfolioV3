@@ -11,6 +11,7 @@ import IQAir from "../assets/IQAir.png";
 import Leaps from "../assets/LeapsLogo.png";
 import FancyTestimonialsSlider from "./components/Testimonials";
 import { useEffect } from "react";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 export default function Home() {
   const testimonials = [
@@ -75,7 +76,8 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full px-5 sm:px-10 md:px-[15%] lg:px-[25%] flex flex-col py-10">
+    <div className="w-full px-5 sm:px-10 md:px-[15%] lg:px-[25%] flex flex-col py-10 bg-white dark:bg-[#1a1a1a] min-h-screen transition-colors duration-300">
+      <DarkModeToggle />
       <Hero />
       <div
         id="nav"
@@ -90,27 +92,27 @@ export default function Home() {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="mb-5 text-[#96979A] px-5 py-2 rounded-md text-sm font-medium"
+            className="mb-5 text-[#96979A] dark:text-gray-400 px-5 py-2 rounded-md text-sm font-medium hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
           >
             {section.title}
           </button>
         ))}
       </div>
-      <h2 id="Experience" className="mt-10 mb-3 text-2xl font-bold">
+      <h2 id="Experience" className="mt-10 mb-3 text-2xl font-bold text-black dark:text-white">
         Experience
       </h2>
       <Experiences />
-      <h2 id="Projects" className="mt-14 mb-3 text-2xl font-bold">
+      <h2 id="Projects" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
         Projects
       </h2>
       <div className="flex flex-wrap w-full justify-between">
         <Projects />
       </div>
-      <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold">
+      <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
         Recommendations
       </h2>
       <FancyTestimonialsSlider testimonials={testimonials} />
-      <h2 id="Blogs" className="mt-14 mb-3 text-2xl font-bold">
+      <h2 id="Blogs" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
         Blogs
       </h2>
       <Blog
@@ -155,19 +157,19 @@ export default function Home() {
         blogTitle="How LeetCode Transformed My Note-Taking App"
         blogDescription="I&rsquo;ve been solving LeetCode problems to prepare for software engineering job interviews and like many, I initially thought that the data structures and algorithms emphasized in these problems would rarely be encountered in real-life work and projects. However, my recent experience proved otherwise."
       />
-      <h2 id="Connect" className="mt-14 mb-3 text-2xl font-bold">
+      <h2 id="Connect" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
         Let&rsquo;s Connect
       </h2>
       <div className="flex flex-col">
         <button
           onClick={sendEmail}
-          className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium"
+          className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-[#d44165] transition-colors"
         >
           Email me: juliusscecilia33@gmail.com
         </button>
         <button
           onClick={makeCall}
-          className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium"
+          className="bg-[#E95278] mb-5 text-white px-5 py-2 rounded-md text-sm font-medium hover:bg-[#d44165] transition-colors"
         >
           Call me: 562-332-4687
         </button>

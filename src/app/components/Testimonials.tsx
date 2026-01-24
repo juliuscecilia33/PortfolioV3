@@ -61,7 +61,7 @@ export default function FancyTestimonialsSlider({
               leaveTo="opacity-0 translate-x-4"
               beforeEnter={() => heightFix()}
             >
-              <div className="text-xl sm:text-2xl font-bold text-slate-900 before:content-['\201C'] after:content-['\201D']">
+              <div className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white before:content-['\201C'] after:content-['\201D']">
                 {testimonial.quote}
               </div>
             </Transition>
@@ -76,7 +76,7 @@ export default function FancyTestimonialsSlider({
             className={`inline-flex justify-center whitespace-nowrap rounded-full px-3 py-1.5 m-1.5 text-xs sm:text-sm shadow-sm focus-visible:outline-none focus-visible:ring focus-visible:ring-[#E95278]/50 transition-colors duration-150 ${
               active === index
                 ? "bg-[#E95278] text-white shadow-[#E95278]/50"
-                : "bg-white hover:bg-[#E95278]/10 text-slate-900"
+                : "bg-white dark:bg-gray-800 hover:bg-[#E95278]/10 dark:hover:bg-[#E95278]/20 text-slate-900 dark:text-white"
             }`}
             onClick={() => {
               setActive(index);
@@ -86,7 +86,7 @@ export default function FancyTestimonialsSlider({
             <span>{testimonial.name}</span>{" "}
             <span
               className={`${
-                active === index ? "text-[#E95278]/20" : "text-slate-300"
+                active === index ? "text-[#E95278]/20" : "text-slate-300 dark:text-gray-500"
               }`}
             >
               -
