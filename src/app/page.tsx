@@ -12,6 +12,8 @@ import Leaps from "../assets/LeapsLogo.png";
 import FancyTestimonialsSlider from "./components/Testimonials";
 import { useEffect } from "react";
 import DarkModeToggle from "./components/DarkModeToggle";
+import { motion } from "framer-motion";
+import { fadeIn, defaultViewport } from "./utils/animations";
 
 export default function Home() {
   const testimonials = [
@@ -98,23 +100,49 @@ export default function Home() {
           </button>
         ))}
       </div>
-      <h2 id="Experience" className="mt-10 mb-3 text-2xl font-bold text-black dark:text-white">
+      <motion.h2
+        id="Experience"
+        className="mt-10 mb-3 text-2xl font-bold text-black dark:text-white"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+      >
         Experience
-      </h2>
+      </motion.h2>
       <Experiences />
-      <h2 id="Projects" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
+      <motion.h2
+        id="Projects"
+        className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+      >
         Projects
-      </h2>
-      <div className="flex flex-wrap w-full justify-between">
-        <Projects />
-      </div>
-      <h2 id="Recommendations" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
+      </motion.h2>
+      <Projects />
+      <motion.h2
+        id="Recommendations"
+        className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+      >
         Recommendations
-      </h2>
+      </motion.h2>
       <FancyTestimonialsSlider testimonials={testimonials} />
-      <h2 id="Blogs" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
+      <motion.h2
+        id="Blogs"
+        className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+      >
         Blogs
-      </h2>
+      </motion.h2>
       <Blog
         blogLink="https://medium.com/@juliuscecilia33/go-fiber-radix-trees-9a1befb873f2"
         backgroundColor="F8F8FA"
@@ -157,9 +185,16 @@ export default function Home() {
         blogTitle="How LeetCode Transformed My Note-Taking App"
         blogDescription="I&rsquo;ve been solving LeetCode problems to prepare for software engineering job interviews and like many, I initially thought that the data structures and algorithms emphasized in these problems would rarely be encountered in real-life work and projects. However, my recent experience proved otherwise."
       />
-      <h2 id="Connect" className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white">
+      <motion.h2
+        id="Connect"
+        className="mt-14 mb-3 text-2xl font-bold text-black dark:text-white"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+      >
         Let&rsquo;s Connect
-      </h2>
+      </motion.h2>
       <div className="flex flex-col">
         <button
           onClick={sendEmail}

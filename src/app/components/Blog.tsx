@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { MdOutlineOpenInNew } from "react-icons/md";
+import { motion } from "framer-motion";
+import { fadeInUp, defaultViewport } from "../utils/animations";
 
 type BlogProps = {
   blogLink: string;
@@ -15,8 +19,14 @@ const Blog = ({
   blogDescription,
 }: BlogProps) => {
   return (
-    <div
+    <motion.div
       className={`w-full bg-[#${backgroundColor}] dark:bg-[#2a2a2a] p-6 md:p-10 flex flex-col justify-center rounded-lg mb-4 md:mb-2 transition-colors duration-300`}
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={defaultViewport}
+      whileHover={{ y: -4, scale: 1.02 }}
+      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="flex items-center justify-between mb-4">
         <p className="text-[#96979A] dark:text-gray-400 text-xs md:text-sm">medium.com</p>
@@ -28,7 +38,7 @@ const Blog = ({
         {blogTitle}
       </h2>
       <p className="text-[#96979A] dark:text-gray-400 text-sm mb-2">{blogDescription}</p>
-    </div>
+    </motion.div>
   );
 };
 

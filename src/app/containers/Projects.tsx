@@ -1,3 +1,5 @@
+"use client";
+
 import Leaps from "../../assets/LeapsLogo.png";
 import SageLogo from "../../assets/SageLogo.png";
 import Joblicant from "../../assets/Joblicant.png";
@@ -9,38 +11,54 @@ import FAOutlets from "../../assets/FAOutlets.png";
 import CycleScan from "../../assets/CycleScan.png";
 import Project from "../components/Project";
 import DineLogo from "../../assets/DineLogo.png";
+import { motion } from "framer-motion";
 
 const Projects = () => {
+  const containerVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
   return (
-    <>
+    <motion.div
+      className="flex flex-wrap w-full justify-between"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <Project
         imageSrc={DineLogo}
         imageAlt="Dine"
         projectName="Dine"
-        projectDescription="Dine is a cross-platform mobile application designed to make living with food allergies safer and easier. Whether you're managing your own allergies, caring for children with food restrictions, or running a restaurant that accommodates allergen-sensitive diners, Dine provides the tools you need."
+        projectDescription="Dine is a cross-platform mobile application designed to make living with food allergies safer and easier."
         projectLink="https://github.com/SageDevelopmentCode/dineapp"
       />
       <Project
         imageSrc={DineLogo}
         imageAlt="Dine"
         projectName="Dine Web"
-        projectDescription="Dine Web is the public/private profile component of the Dine food allergy management ecosystem. It provides shareable web profiles for users and restaurants to communicate food allergy information, safety protocols, and dietary accommodations."
+        projectDescription="Dine Web provides shareable web profiles for users and restaurants to communicate food allergy information, safety protocols, and dietary accommodations."
         projectLink="https://github.com/SageDevelopmentCode/dine-web"
       />
-      <Project
+      {/* <Project
         imageSrc={SageLogo}
         imageAlt="Sage"
         projectName="Sage"
-        projectDescription="An engaging and interactive app designed to inspire growth for both kids. By combining the timeless wisdom of the Bible with modern gamification elements, Sage offers a unique way to deepen your faith while having fun and connecting with others."
+        projectDescription="An engaging and interactive app designed to inspire growth for both kids and adults."
         projectLink="https://github.com/juliuscecilia33/sagev2-mobile"
       />
       <Project
         imageSrc={SageLogo}
         imageAlt="Sage"
         projectName="Sage (Backend)"
-        projectDescription="The backend of SageV2 is built with Golang, Docker, and PostgreSQL, ensuring a scalable foundation for the app's interactive and faith-based features."
+        projectDescription="The backend of SageV2 is built with Golang, Docker, and PostgreSQL, ensuring a scalable foundation for the app's interactive and features."
         projectLink="https://github.com/juliuscecilia33/sagev2"
-      />
+      /> */}
       <Project
         imageSrc={HoopsPredictor}
         imageAlt="HoopsPredictor"
@@ -53,7 +71,7 @@ const Projects = () => {
         imageSrc={ChatPulse}
         imageAlt="ChatPulse"
         projectName="ChatPulse"
-        projectDescription="This Java-based chat application features real-time typing indicators, allowing users to see when someone is typing a message. Inspired by the subtle yet impactful design of modern messaging apps, this project demonstrates how small features can enhance user experience."
+        projectDescription="This Java-based chat application features real-time typing indicators, allowing users to see when someone is typing a message."
         projectLink="https://github.com/juliuscecilia33/ChatPulse"
       />
       <Project
@@ -67,28 +85,28 @@ const Projects = () => {
         imageSrc={FAInitiative}
         imageAlt="FAInitiative"
         projectName="FA Initiative"
-        projectDescription="A reddit-inspired social media hub that connects people with food allergies and allows assemblies or posts to be created. Users can discover new foods they can eat, learn an assortment of recipes, read relatable experiences, and meet others to help spread positivity and take initiative towards the problem of food allergies"
+        projectDescription="A reddit-inspired social media hub that connects people with food allergies and allows assemblies or posts to be created."
         projectLink="https://github.com/juliuscecilia33/FAInitiative"
       />
       <Project
         imageSrc={InstaDeck}
         imageAlt="InstaDeck"
         projectName="InstaDeck"
-        projectDescription="A semi-dashboard interface of Instagram made with React and Google Firebase! By providing different “decks” of posts from your personalized following post deck to the trending or popular deck, users of InstaDeck are given a comforting and appealing perspective for their Instagram feed."
+        projectDescription="A semi-dashboard interface of Instagram made with React and Google Firebase."
         projectLink="https://github.com/juliuscecilia33/InstaDeck"
       />
       <Project
         imageSrc={Joblicant}
         imageAlt="Joblicant"
         projectName="Joblicant"
-        projectDescription="A dashboard interface showcasing all your job applications in one place! Users can also save commonly used application information and easily copy/paste that over to whatever they&rsquo;re applying for."
+        projectDescription="A dashboard interface showcasing all your job applications in one place."
         projectLink="https://github.com/juliuscecilia33/Joblicant"
       />
       <Project
         imageSrc={FAOutlets}
         imageAlt="FAOutlets"
         projectName="FAOutlets"
-        projectDescription="An E-commerce Store that combines all Food Allergy manufacturers and products into one online hub. Website is made with React.js, Commerce.js, and Stripe."
+        projectDescription="An E-commerce Store that combines all Food Allergy manufacturers and products into one online hub."
         projectLink="https://github.com/juliuscecilia33/FAOutlets"
       />
       <Project
@@ -98,7 +116,7 @@ const Projects = () => {
         projectDescription="Cross-platform mobile application that determines whether an object is recyclable, compostable or neither using object recognition. My team won the Wolfram Alpha Track Prize by SD Hacks 2021."
         projectLink="https://github.com/bkenza/CycleScan"
       />
-    </>
+    </motion.div>
   );
 };
 

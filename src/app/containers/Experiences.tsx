@@ -1,27 +1,54 @@
+"use client";
+
 import Experience from "../components/Experience";
 import Adobe from "../../assets/AdobeRedLogo.png";
 import IQAir from "../../assets/IQAir.png";
 import Chimerocyte from "../../assets/Chimerocyte.png";
 import Leaps from "../../assets/LeapsLogo.png";
 import BookedBy from "../../assets/BookedBy.jpg";
+import { motion } from "framer-motion";
 
 const Experiences = () => {
+  const containerVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   return (
-    <>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <Experience
         imageSrc={BookedBy}
         imageAlt="BookedBy"
-        description="I led the full lifecycle development of Bookedby's Queue: from prototyping and design to building a fully functional product component. I also enhanced the company's Sales flow and interface, improving usability and visual appeal to boost user engagement. I developed new features in the Appointment Book, including its rebooking functionality, booking additional appointments, and mobile-friendly design for a superior user experience. I built out the Transactions page too by integrating backend data, enabling users to view their transaction history clearly and efficiently."
+        description={[
+          "Led full lifecycle development of **Bookedby's Queue** from prototyping and design to building a fully functional product component",
+          "Enhanced the **Sales flow** and interface, improving usability and visual appeal to boost user engagement",
+          "Developed new **Appointment Book** features including rebooking functionality, booking additional appointments, and mobile-friendly design",
+          "Built the **Transactions page** by integrating backend data, enabling users to view their transaction history clearly and efficiently"
+        ]}
         positionName="Software Engineer"
         companyName="BookedBy"
         location="Austin, Texas"
         backgroundColor="#FFFFFF"
-        dateOfExperience="February 2025 - Present"
+        dateOfExperience="February 2025 - January 2026"
       />
       <Experience
         imageSrc={Leaps}
         imageAlt="Leaps"
-        description="I led a team of five using agile methodologies to develop a social communication app for sports enthusiasts. We utilized Flutter, Node.js, AWS services (S3, RDS, API Gateway, Cognito), and PostgreSQL to create a mobile app that enhanced user engagement in sports activities and team collaboration. Our project received $8k in funding from the AWS Startup Program and was showcased at UW&rsquo;s 2024 Science and Technology Showcase, highlighting our innovation in sports technology."
+        description={[
+          "Led a team of five using agile methodologies to develop a social communication app for sports enthusiasts",
+          "Utilized **Flutter**, **Node.js**, and **AWS services** (S3, RDS, API Gateway, Cognito) to create a mobile app enhancing user engagement",
+          "Secured **$8k in funding** from the AWS Startup Program",
+          "Showcased project at **UW's 2024 Science and Technology Showcase**, highlighting innovation in sports technology"
+        ]}
         positionName="Co-Founder and Software Engineer"
         companyName="Leaps"
         location="Seattle, Washington"
@@ -31,7 +58,12 @@ const Experiences = () => {
       <Experience
         imageSrc={Adobe}
         imageAlt="Adobe 2023"
-        description="I developed a dynamic email automation solution for Adobe using Microsoft Outlook&rsquo;s Actionable Messages/Adaptive Cards and Google&rsquo;s AMP for Gmail, optimizing product approval workflows and cutting errors by 30%. I integrated this with Adobe&rsquo;s backend using Python and Node.js for security and reliability. Additionally, I helped in the transition of Adobe&rsquo;s Console for Businesses from Angular.js to React.js, ensuring smooth integration and performance using Jasmine.js and Jest.js for testing."
+        description={[
+          "Developed dynamic email automation solution using **Actionable Messages/Adaptive Cards** and **AMP for Gmail**, optimizing product approval workflows and cutting errors by **30%**",
+          "Integrated solution with Adobe's backend using Python and Node.js for security and reliability",
+          "Helped transition Adobe's Console for Businesses from **Angular.js to React.js**, ensuring smooth integration and performance",
+          "Implemented comprehensive testing using Jasmine.js and Jest.js"
+        ]}
         positionName="Software Engineer Intern"
         companyName="Adobe"
         location="Seattle, Washington"
@@ -41,7 +73,12 @@ const Experiences = () => {
       <Experience
         imageSrc={Adobe}
         imageAlt="Adobe 2022"
-        description="I implemented a read-only access mode for Adobe&rsquo;s Console for Businesses using React.js, Angular.js, and Java, addressing customer security concerns and improving support processes by 40%. This involved refining data and authentication logic to establish role-based access control with token-based authentication. I integrated backend APIs to validate user permissions in real-time, ensuring secure and streamlined access for users."
+        description={[
+          "Implemented **read-only access mode** for Adobe's Console for Businesses using React.js, Angular.js, and Java, improving support processes by **40%**",
+          "Refined data and authentication logic to establish **role-based access control** with token-based authentication",
+          "Integrated backend APIs to validate user permissions in real-time",
+          "Addressed customer security concerns while ensuring secure and streamlined access for users"
+        ]}
         positionName="Software Engineer Intern"
         companyName="Adobe"
         location="Seattle, Washington"
@@ -51,7 +88,12 @@ const Experiences = () => {
       <Experience
         imageSrc={IQAir}
         imageAlt="IQAir"
-        description="I implemented real-time enhancements across 40+ tickets using Angular.js, React.js, and Redux, updating 70+ translated versions of the site to improve user experience. I also deployed a regional site with Drupal CMS and its CDN feature, ensuring seamless access for over 1.5 million users in their native languages without service interruptions. Additionally, I developed automated migration scripts with Shopify/PHP to consolidate global stores, effectively reducing company overhead."
+        description={[
+          "Implemented real-time enhancements across **40+ tickets** using Angular.js, React.js, and Redux, updating **70+ translated versions** of the site",
+          "Deployed regional site with Drupal CMS and CDN feature, ensuring seamless access for over **1.5 million users** in their native languages",
+          "Developed automated migration scripts with Shopify/PHP to consolidate global stores",
+          "Effectively reduced company overhead and improved user experience without service interruptions"
+        ]}
         positionName="Software Engineer Intern"
         companyName="IQAir"
         location="La Mirada, California"
@@ -61,14 +103,19 @@ const Experiences = () => {
       <Experience
         imageSrc={Chimerocyte}
         imageAlt="Chimerocyte"
-        description="I created a React.js website integrated with AWS (Amplify, Cognito, Route 53, EC2, Lambda, S3) for employees across all levels, facilitating a robust laboratory management system. By leveraging Python, I unified extraction scripts, simplifying the upload of patient and donor documents directly to AWS S3 Buckets. This enhanced data management and workflow efficiency, promoting seamless collaboration and productivity organization-wide."
+        description={[
+          "Created React.js website integrated with **AWS** (Amplify, Cognito, Route 53, EC2, Lambda, S3) for employees across all levels",
+          "Facilitated robust **laboratory management system** for seamless collaboration and productivity",
+          "Unified extraction scripts using Python, simplifying upload of patient and donor documents to AWS S3 Buckets",
+          "Enhanced data management and workflow efficiency organization-wide"
+        ]}
         positionName="Software Engineer Intern"
         companyName="Chimerocyte"
         location="Seattle, Washington"
         backgroundColor="#F8F8FA"
         dateOfExperience="June 2021 - September 2021"
       />
-    </>
+    </motion.div>
   );
 };
 
