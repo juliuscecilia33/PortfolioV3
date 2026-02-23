@@ -6,6 +6,7 @@ import IQAir from "../../assets/IQAir.png";
 import Chimerocyte from "../../assets/Chimerocyte.png";
 import Leaps from "../../assets/LeapsLogo.png";
 import BookedBy from "../../assets/BookedBy.jpg";
+import TSA from "../../assets/TSA.png";
 import { motion } from "framer-motion";
 
 const Experiences = () => {
@@ -20,11 +21,21 @@ const Experiences = () => {
   };
 
   return (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <motion.div variants={containerVariants} initial="hidden" animate="visible">
+      <Experience
+        imageSrc={TSA}
+        imageAlt="Texas Sports Academy"
+        description={[
+          "Redesigned key website flows by consolidating lead, facility, and heat maps into a single interactive map experience, enabling prospective families to discover nearby interested families, partnered facilities, and high-density areas",
+          "Developed a computer-vision–based application using **React Native**, **Python**, **Postgres**, and **MediaPipe Pose** to detect and analyze volleyball swing mechanics, generating automated performance reports and 3D skeletal visualizations",
+          "Built a data-scraping and analysis tool with aggregating publicly available Texas real estate listings to identify optimal locations for future Texas Sports Academy facilities",
+        ]}
+        positionName="Software Engineer"
+        companyName="Texas Sports Academy"
+        location="Austin, Texas"
+        backgroundColor="#F8F8FA"
+        dateOfExperience="February 2026 - Present"
+      />
       <Experience
         imageSrc={BookedBy}
         imageAlt="BookedBy"
@@ -32,7 +43,7 @@ const Experiences = () => {
           "Led full lifecycle development of **Bookedby's Queue** from prototyping and design to building a fully functional product component",
           "Enhanced the **Sales flow** and interface, improving usability and visual appeal to boost user engagement",
           "Developed new **Appointment Book** features including rebooking functionality, booking additional appointments, and mobile-friendly design",
-          "Built the **Transactions page** by integrating backend data, enabling users to view their transaction history clearly and efficiently"
+          "Built the **Transactions page** by integrating backend data, enabling users to view their transaction history clearly and efficiently",
         ]}
         positionName="Software Engineer"
         companyName="BookedBy"
@@ -47,7 +58,7 @@ const Experiences = () => {
           "Led a team of five using agile methodologies to develop a social communication app for sports enthusiasts",
           "Utilized **Flutter**, **Node.js**, and **AWS services** (S3, RDS, API Gateway, Cognito) to create a mobile app enhancing user engagement",
           "Secured **$8k in funding** from the AWS Startup Program",
-          "Showcased project at **UW's 2024 Science and Technology Showcase**, highlighting innovation in sports technology"
+          "Showcased project at **UW's 2024 Science and Technology Showcase**, highlighting innovation in sports technology",
         ]}
         positionName="Co-Founder and Software Engineer"
         companyName="Leaps"
@@ -62,7 +73,7 @@ const Experiences = () => {
           "Developed dynamic email automation solution using **Actionable Messages/Adaptive Cards** and **AMP for Gmail**, optimizing product approval workflows and cutting errors by **30%**",
           "Integrated solution with Adobe's backend using Python and Node.js for security and reliability",
           "Helped transition Adobe's Console for Businesses from **Angular.js to React.js**, ensuring smooth integration and performance",
-          "Implemented comprehensive testing using Jasmine.js and Jest.js"
+          "Implemented comprehensive testing using Jasmine.js and Jest.js",
         ]}
         positionName="Software Engineer Intern"
         companyName="Adobe"
@@ -77,7 +88,7 @@ const Experiences = () => {
           "Implemented **read-only access mode** for Adobe's Console for Businesses using React.js, Angular.js, and Java, improving support processes by **40%**",
           "Refined data and authentication logic to establish **role-based access control** with token-based authentication",
           "Integrated backend APIs to validate user permissions in real-time",
-          "Addressed customer security concerns while ensuring secure and streamlined access for users"
+          "Addressed customer security concerns while ensuring secure and streamlined access for users",
         ]}
         positionName="Software Engineer Intern"
         companyName="Adobe"
@@ -92,7 +103,7 @@ const Experiences = () => {
           "Implemented real-time enhancements across **40+ tickets** using Angular.js, React.js, and Redux, updating **70+ translated versions** of the site",
           "Deployed regional site with Drupal CMS and CDN feature, ensuring seamless access for over **1.5 million users** in their native languages",
           "Developed automated migration scripts with Shopify/PHP to consolidate global stores",
-          "Effectively reduced company overhead and improved user experience without service interruptions"
+          "Effectively reduced company overhead and improved user experience without service interruptions",
         ]}
         positionName="Software Engineer Intern"
         companyName="IQAir"
@@ -107,7 +118,7 @@ const Experiences = () => {
           "Created React.js website integrated with **AWS** (Amplify, Cognito, Route 53, EC2, Lambda, S3) for employees across all levels",
           "Facilitated robust **laboratory management system** for seamless collaboration and productivity",
           "Unified extraction scripts using Python, simplifying upload of patient and donor documents to AWS S3 Buckets",
-          "Enhanced data management and workflow efficiency organization-wide"
+          "Enhanced data management and workflow efficiency organization-wide",
         ]}
         positionName="Software Engineer Intern"
         companyName="Chimerocyte"
