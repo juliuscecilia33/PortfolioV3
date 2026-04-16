@@ -36,14 +36,14 @@ const Projects = () => {
         imageAlt="Dine"
         projectName="Dine"
         projectDescription="Dine is a cross-platform mobile application designed to make living with food allergies safer and easier."
-        projectLink="https://github.com/SageDevelopmentCode/dineapp"
+        projectLink="https://github.com//dineapp"
       />
       <Project
         imageSrc={DineLogo}
         imageAlt="Dine"
         projectName="Dine Web"
         projectDescription="Dine Web provides shareable web profiles for users and restaurants to communicate food allergy information, safety protocols, and dietary accommodations."
-        projectLink="https://github.com/SageDevelopmentCode/dine-web"
+        projectLink="https://github.com//dine-web"
       />
       {/* <Project
         imageSrc={SageLogo}
